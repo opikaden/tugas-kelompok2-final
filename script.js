@@ -1,11 +1,12 @@
-// Nav Menu jika saat aktif
+// Nav Menu saat aktif
 const navbarNav = document.querySelector(".navbar-nav");
 // Saat Menu di klik
-document.querySelector("#menu").onclick = () => {
+document.querySelector("#menu").onclick = (e) => {
   navbarNav.classList.toggle("active");
+  e.preventDefault();
 };
 
-// Searcg jika aktif
+// Search jika aktif
 const searchForm = document.querySelector(".search-form");
 const searchBox = document.querySelector("#search-box");
 
